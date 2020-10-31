@@ -21,3 +21,8 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 } 
+ function getTiempo(){
+    $.get("https://api.openweathermap.org/data/2.5/weather?lat=40.5571635&lon=-3.2552766&appid=26b5cac6a6126f7d1ed8e695cea690f7",(data,status) => {
+        alert(data.main.temp);
+      });
+  }
